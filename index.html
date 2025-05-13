@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pramoth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+    }
+
+    .card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      padding: 40px 30px;
+      max-width: 420px;
+      width: 90%;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .card img {
+      width: 290px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .destination {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+    .name-degree {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.name-degree .name {
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+.name-degree .degree {
+  font-size: 18px;
+  font-weight: 500;
+  color: #515151;
+}
+
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-profile {
+      background: linear-gradient(to right, #667eea, #764ba2);
+    }
+
+    .btn-contact {
+      background: linear-gradient(to right, #43cea2, #185a9d);
+    }
+
+    .btn-follow {
+      background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    }
+
+    .buttons a:hover {
+      opacity: 0.9;
+    }
+
+    @media (min-width: 500px) {
+      .buttons {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .buttons a {
+        flex: 1 1 auto;
+        min-width: 100px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="assets/me.jpg" alt="Profile Photo">
+    <div class="name-degree">
+        <span class="name">PRAMOTH S,</span>
+        <span class="degree">MCA.,</span>
+    </div>
+    <div class="destination">Full-Stack Developer</div>
+    <div class="buttons">
+      <a class="btn-profile" href="https://pramoth-26.github.io/portfolio/" target="_blank"> Portfolio</a>
+      <a class="btn-contact" href="https://github.com/pramoth-26" target="_blank">GitHub</a>
+      <a class="btn-follow" href="assets/Pramoth S.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+
+</body>
+</html>
